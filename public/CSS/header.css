@@ -1,0 +1,168 @@
+.header-top {
+	align-items: center;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 10px auto 5px;
+	row-gap: 15px;
+	width: 100%;
+	max-width: 1000px;
+}
+
+.header-top-column {
+	align-items: center;
+	display: flex;
+}
+
+.header-top-column.left {
+	cursor: pointer;
+	flex-wrap: nowrap;
+	margin-right: 50px;
+}
+
+.header-top-column.right {
+	flex-grow: 2;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	max-width: 650px;
+	row-gap: 15px;
+}
+
+.logo {
+	margin-right: 15px;
+	height: auto;
+	width: 50px;
+}
+
+.shop-name {
+	font-size: 1.3rem;
+	font-weight: bold;
+}
+
+.search-box {
+	align-items: center;
+	border-radius: 25px;
+	border: solid black 2px;
+	display: flex;
+	flex-grow: 2;
+	height: 90%;
+	margin: 0 25px 0 15px;
+	padding: 0 20px;
+}
+
+.search-field {
+	border: none;
+	flex-grow: 2;
+}
+
+.search-field:focus {
+	border: none;
+	outline: none;
+}
+
+.search-field::-webkit-search-cancel-button {
+	-webkit-appearance: none;
+	background-size: contain;
+	background: url("/Img/cross_button.png") no-repeat 50% 50%;
+	border-radius: 50em;
+	cursor: pointer;
+	height: 1em;
+	margin-left: 10px;
+	margin-right: 10px;
+	opacity: .3;
+	width: 1em;
+}
+
+.search-field:focus::-webkit-search-cancel-button {
+	opacity: .3;
+	pointer-events: all;
+}
+
+.icon-search {
+	height: auto;
+	margin: 5px 0;
+	width: 25px;
+}
+
+.icon-search:hover {
+	cursor: pointer;
+}
+
+.header-buttons-container {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.header-button {
+	align-items: center;
+	display: flex;
+	margin-right: 15px;
+	padding: 5px 15px;
+}
+
+.header-button:hover {
+	border-radius: 25px;
+	box-shadow: 0 0 2px black;
+	cursor: pointer;
+}
+
+.header-button.last {
+	margin-right: 5px;
+}
+
+.header-button-icon {
+	height: auto;
+	margin-right: 10px;
+	width: 25px;
+}
+
+.header-nav {
+	background-color: black;
+	width: 100%;
+}
+
+.navbar ul {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: start;
+	margin: 0 auto 10px;
+	padding: 10px 0;
+	row-gap: 20px;
+	width: 100%;
+	max-width: 1000px;
+}
+
+.navbar li {
+	list-style: none;
+	white-space: nowrap;
+}
+
+.navbar li a {
+	color: white;
+	font-weight: bold;
+	padding: 10px 20px;
+	text-decoration: none;
+}
+
+.navbar li a:hover {
+	background-color: dimgray;
+}
+
+
+@media (max-width: 750px) {
+	.header-top {
+		justify-content: center;
+		margin-bottom: 15px;
+		margin-left: 5px;
+		margin-right: 5px;
+	}
+	.header-top-column.left {
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.header-top-column.right {
+		justify-content: center;
+		margin-left: 0;
+		margin-right: 0;
+	}
+}

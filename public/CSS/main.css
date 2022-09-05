@@ -1,0 +1,17 @@
+body {
+	font-family: 'Roboto', sans-serif;
+	margin: 0;
+}
+
+main {
+	margin: 0 auto 15px;
+	width: 100%;
+	max-width: 1000px;
+}
+
+@media (max-width: 750px) {
+	main {
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+}

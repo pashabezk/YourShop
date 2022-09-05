@@ -1,0 +1,141 @@
+.footer-container {
+	align-items: center;
+	background-color: black;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	padding-top: 15px;
+	width: 100%;
+}
+
+/* часть стилей для лого идёт из стилей header */
+.foooter-site-logo {
+	align-items: center;
+	cursor: pointer;
+	display: flex;
+	flex-wrap: nowrap;
+	margin-bottom: 15px;
+}
+
+.foooter-site-logo .shop-name {
+	color: white;
+}
+
+.footer-columns {
+	display: flex;
+	flex-flow: row wrap;
+	font-size: 0.8rem;
+	justify-content: space-evenly;
+	max-width: 700px;
+	width: 100%;
+}
+
+.footer-column.last {
+	margin-right: 10px;
+
+}
+
+.footer-column {
+	margin-bottom: 30px;
+	margin-right: 50px;
+}
+
+.footer-column.first {
+	max-width: 200px;
+}
+
+.footer-column h3 {
+	margin-bottom: 20px;
+	margin-top: 10px;
+}
+
+.footer-column.information ul {
+	list-style: circle;
+	margin: 0;
+	padding-left: 15px;
+}
+
+.footer-column.contacts ul {
+	list-style: none;
+	margin: 0;
+	padding-left: 0;
+}
+
+.footer-column li {
+	margin-bottom: 10px;
+	white-space: nowrap;
+}
+
+.footer-column.contacts li {
+	background-position: left center;
+	background-repeat: no-repeat;
+	background-size: 0.8rem;
+	list-style: none;
+	padding: 0 0 0 20px;
+}
+
+li a {
+	color: white;
+	text-decoration: none;
+}
+
+li.phone {
+	background-image: url('/Img/smartphone.png');
+}
+
+li.email {
+	background-image: url('/Img/envelope.png');
+}
+
+li.map {
+	background-image: url('/Img/location.png');
+}
+
+.footer-container hr {
+	border: none;
+	border-top: solid white 2px;
+	margin-bottom: 30px;
+	margin-top: 10px;
+	width: 80%;
+	max-width: 600px;
+}
+
+.social-media-container {
+	align-items: center;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+	justify-content: space-evenly;
+	margin-left: 20px;
+	max-width: 550px;
+	width: calc(100% - 40px);
+}
+
+.social-media-container .icon{
+	height: auto;
+	width: 25px;
+}
+
+.copyrights {
+	margin: 30px auto;
+	font-size: 0.7rem;
+}
+
+.copyrights a {
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+}
+
+@media (max-width: 600px) {
+	.footer-container {
+		align-items: flex-start;
+	}
+	.foooter-site-logo {
+		margin-left: 15px;
+	}
+	.footer-columns {
+		margin-left: 15px;
+		justify-content: flex-start;
+	}
+}

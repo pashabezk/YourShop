@@ -1,0 +1,18 @@
+extends main_layout.pug
+
+block styles
+	link(rel='stylesheet' href='CSS/product grid.css')
+
+block content
+	h1 Главная страница
+
+	.product-grid
+		each product in products
+			.product-card
+				img(src=product.imgUrl alt='Product img')
+				p.product-header #{product.productDisplayName}
+				.product-price-block
+					p.product-price #{product.price}&nbsp;₽
+					.product-price-cart.tooltip(data-text='Добавить в корзину')
+						img(src='Img/add_to_cart.png' alt='Add to cart')
+						
